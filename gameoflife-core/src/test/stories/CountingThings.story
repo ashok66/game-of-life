@@ -7,6 +7,6 @@ scenario 'Adding two integers', {
         sum = a + b
     }
     then 'the sum should be 3', {
-        sum.shouldBe 5
+        sum.shouldBe 3
     }
 }
