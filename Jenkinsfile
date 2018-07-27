@@ -9,7 +9,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'mvn test'
-        emailext(subject: 'GOL-AutoTest-Report | Jenkins', body: 'Test report', attachLog: true, compressLog: true, from: 'ashok@skillogic.com', replyTo: 'ashok@skillogic.com', to: 'ashok66@gmail.com')
+        emailext(subject: 'Test reports', body: 'Reports', attachLog: true, from: 'ashok@skillogic.com', to: 'ashok66@gmail.com')
       }
     }
   }
