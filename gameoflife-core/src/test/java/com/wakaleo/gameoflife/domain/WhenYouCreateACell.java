@@ -12,7 +12,7 @@ public class WhenYouCreateACell {
     @Test
     public void aLiveCellShouldBeRepresentedByAnAsterisk() {
         Cell cell = Cell.fromSymbol("*");
-        assertThat(cell, is(LIVE_CELL));
+        assertThat(cell, is(DEAD_CELL));
     }
 
     @Test
